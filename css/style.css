@@ -1,48 +1,55 @@
 .wrap {
-    height: 1080px;
-    width: 1440px;
-    position: absolute;
     transform-origin: 0% 0%;
     font-family: Space Mono;
-    letter-spacing: -0.035em;
-
 }
-
 h1 {
     margin: 40px;
-    margin-left: 77px;
+    width: 200px;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: -0.08em;
+}
 
+.responsive {
+    max-width: 1250px;
+    margin: auto;
 }
 
 figure {
     float: left;
-    margin-top: 200px;
-    margin-left: 77px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    figure {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0px;
+    }
 }
 
 img {
-    height: 447px;
+    width: 100%;
 }
 
 .inline {
     float: left;
-
     overflow-wrap: break-word;
     table-layout: fixed;
 }
 
-.la {
-    
+.large {
     font-size: 64px;
     font-weight: bold;
-    width: 586px;
+    max-width: 590px;
 }
-.sm {
+.small {
     font-size: 24px;
-    width: 381px;
+    max-width: 381px;
 }
 
 button {
